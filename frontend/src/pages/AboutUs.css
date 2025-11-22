@@ -1,0 +1,93 @@
+.about-container {
+  font-family: "Poppins", sans-serif;
+  padding: 40px;
+  background-color: #fafafa;
+  color: #333;
+  text-align: center;
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  padding: 60px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  color: #1e88e5;
+}
+
+.about-hero p {
+  font-size: 1.1rem;
+  margin-top: 15px;
+  color: #555;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Mission & Vision */
+.mission-section {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.mission-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  width: 320px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+}
+
+.mission-card h2 {
+  color: #1565c0;
+  margin-bottom: 10px;
+}
+
+/* Why Choose Us */
+.why-section {
+  margin-top: 80px;
+}
+
+.why-section h2 {
+  font-size: 2rem;
+  color: #1e88e5;
+  margin-bottom: 30px;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.why-item {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s;
+}
+
+.why-item:hover {
+  transform: translateY(-5px);
+  background-color: #e3f2fd;
+}
+
+.why-item h3 {
+  color: #1565c0;
+  margin-bottom: 10px;
+}

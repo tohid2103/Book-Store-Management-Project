@@ -1,0 +1,197 @@
+/* === General Wrapper === */
+.home-wrapper {
+  width: 100%;
+  background-color: #fff;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* === Hero Section === */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #f5f7fa, #e0ecf8);
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.browse-btn {
+  padding: 12px 25px;
+  background-color: #0d47a1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.browse-btn:hover {
+  background-color: #1565c0;
+}
+
+.hero-img img {
+  width: 360px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* === Book Gallery Section === */
+.book-gallery {
+  padding: 60px 10%;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.book-gallery h2 {
+  color: #0d47a1;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 15px;
+}
+
+.gallery-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery-container::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 10px;
+}
+
+.gallery-container::-webkit-scrollbar-thumb:hover {
+  background-color: #888;
+}
+
+.gallery-item {
+  min-width: 230px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0;
+}
+
+.gallery-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.gallery-item h3 {
+  margin: 10px 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* === Quote Section === */
+.quote-section {
+  text-align: center;
+  padding: 50px 15%;
+  background: #f1f8ff;
+  color: #333;
+  font-style: italic;
+  font-size: 1.1rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* === Animations === */
+.fade-in {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 1s ease-out;
+}
+
+.slide-right {
+  animation: slideRight 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 8%;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .hero-img img {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .gallery-item {
+    min-width: 180px;
+  }
+
+  .gallery-item img {
+    height: 250px;
+  }
+}

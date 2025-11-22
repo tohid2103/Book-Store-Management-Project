@@ -1,0 +1,128 @@
+.issue-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", sans-serif;
+}
+
+.issue-container h2 {
+  text-align: center;
+  color: #222;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.issue-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.issue-form select {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  min-width: 180px;
+  background: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.issue-form select:focus {
+  border-color: #4a90e2;
+  outline: none;
+  background: #fff;
+}
+
+.issue-form button {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.issue-form button:hover {
+  background-color: #357abd;
+}
+
+.message {
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+/* Issued Books Table */
+.issued-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fafafa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.issued-table th,
+.issued-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.issued-table th {
+  background-color: #4a90e2;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.issued-table tr:hover {
+  background-color: #f1f7ff;
+}
+
+.return-btn {
+  padding: 8px 14px;
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.return-btn:hover {
+  background-color: #e23e3e;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .issue-container {
+    padding: 20px;
+  }
+
+  .issue-form {
+    flex-direction: column;
+  }
+
+  .issue-form select,
+  .issue-form button {
+    width: 100%;
+  }
+
+  .issued-table th,
+  .issued-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}

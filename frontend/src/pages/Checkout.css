@@ -1,0 +1,149 @@
+.checkout-page {
+  padding: 40px;
+  background-color: #f5f6fa;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.checkout-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.checkout-items {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 380px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.checkout-item img {
+  width: 70px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+
+.checkout-total {
+  color: #27ae60;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.checkout-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 380px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.checkout-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.checkout-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.pay-btn {
+  background-color: #2ecc71;
+  border: none;
+  color: white;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.pay-btn:hover {
+  background-color: #27ae60;
+}
+
+.checkout-success {
+  padding: 80px;
+  background-color: #ecf9f1;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.checkout-success h1 {
+  color: #27ae60;
+  font-size: 2.2rem;
+}
+
+.checkout-success p {
+  color: #34495e;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.checkout-success {
+  text-align: center;
+  margin-top: 80px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.checkout-success h1 {
+  color: #28a745;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.checkout-success p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.back-home-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-home-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
